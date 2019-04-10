@@ -1,10 +1,11 @@
 import React from "react";
-import { View } from "react-native";
+import { View, StatusBar } from "react-native";
 
 import { Container } from "../components/containers";
-
+import { Logo } from "../components/Logo/";
 export default () => (
   <Container>
-    <View />
+    <StatusBar translucent={false} barStyle="light-content" />
+    <Logo />
   </Container>
 );
